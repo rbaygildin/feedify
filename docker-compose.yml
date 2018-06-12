@@ -1,0 +1,8 @@
+version: "2"
+services:
+  db:
+    image: mongo:latest
+    volumes:
+      - "./db/populate.js:/data/populate.js"
+    ports:
+      - "27017:27017"
